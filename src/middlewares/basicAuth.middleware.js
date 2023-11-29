@@ -7,7 +7,6 @@ const basicAuthorizer = (req, res, next) => {
   if (!authHeader) {
     return res.status(401).send("No authorization details found");
   }
-  console.log(authHeader);
 
   // Extract credentails. [Basic qwertytyuuytu23544fgbc]
   const base64Credentials = authHeader.replace("Basic ", "");
