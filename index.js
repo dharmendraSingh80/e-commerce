@@ -24,6 +24,15 @@ app.get("/", (req, res) => {
   res.send("Welcome to Ecommerce APIs");
 });
 
+// middleware to handle 404 requests
+app.use((req, res) => {
+  res
+    .status(404)
+    .send(
+      "API not found. Please check our documentation for more information at localhost:3200/api-docs"
+    );
+});
+
 //specify port
 app.listen(3200, () => {
   console.log("Server is running at 3200");
