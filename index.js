@@ -10,6 +10,7 @@ import cartRouter from "./src/features/cartItems/cartItems.routes.js";
 
 import apiDocs from "./swagger.json" assert { type: "json" };
 import loggerMiddleware from "./src/middlewares/logger.middleware.js";
+import { ApplicationError } from "./src/error-handler/applicationError.js";
 
 //create server
 const app = express();
@@ -43,6 +44,14 @@ app.use("/api/users", userRouter);
 //default request handler
 app.get("/", (req, res) => {
   res.send("Welcome to Ecommerce APIs");
+});
+
+//error handler middleware
+app.use((err, req, res, next) => {
+  if (err instanceof ApplicationError) {
+    res.status(err.code).send(err.message);
+  }
+  res.status(500).send("Something went wrong, please try later");
 });
 
 // middleware to handle 404 requests
