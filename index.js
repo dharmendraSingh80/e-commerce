@@ -1,3 +1,6 @@
+import dotenv from "dotenv";
+//load all the environment variables in application
+dotenv.config();
 import express from "express";
 import swagger from "swagger-ui-express";
 import cors from "cors";
@@ -11,6 +14,7 @@ import cartRouter from "./src/features/cartItems/cartItems.routes.js";
 import apiDocs from "./swagger.json" assert { type: "json" };
 import loggerMiddleware from "./src/middlewares/logger.middleware.js";
 import { ApplicationError } from "./src/error-handler/applicationError.js";
+import { connectToMongoDB } from "./src/config/mongodb.js";
 
 //create server
 const app = express();
@@ -66,4 +70,5 @@ app.use((req, res) => {
 //specify port
 app.listen(3200, () => {
   console.log("Server is running at 3200");
+  connectToMongoDB();
 });

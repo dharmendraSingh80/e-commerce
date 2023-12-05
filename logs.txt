@@ -1,1 +1,3 @@
 {"level":"info","message":"/api/products- {}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup- {\"email\":\"seller3@ecom.com\",\"password\":\"password2\",\"name\":\"Seller User 3\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup- {\"email\":\"seller4@ecom.com\",\"password\":\"password\",\"name\":\"Seller User 4\",\"type\":\"seller\"}","service":"request-logging"}
