@@ -2,8 +2,8 @@ import { ApplicationError } from "../../error-handler/applicationError.js";
 import UserModel from "../user/user.model.js";
 
 export default class ProductModel {
-  constructor(id, name, desc, price, imageUrl, category, sizes) {
-    this.id = id;
+  constructor(name, desc, price, imageUrl, category, sizes, id) {
+    this._id = id;
     this.name = name;
     this.desc = desc;
     this.imageUrl = imageUrl;
@@ -24,15 +24,7 @@ export default class ProductModel {
     const product = products.find((i) => i.id == id);
     return product;
   }
-  static filter(minPrice, maxPrice, category) {
-    const result = products.filter(
-      (product) =>
-        (!minPrice || product.price >= minPrice) &&
-        (!maxPrice || product.price <= maxPrice) &&
-        (!category || product.category == category)
-    );
-    return result;
-  }
+
 
   static rateProduct(userID, productID, rating) {
     // validate user and product

@@ -2,13 +2,16 @@ import { getDB } from "../../config/mongodb.js";
 import { ApplicationError } from "../../error-handler/applicationError.js";
 
 class UserRepository {
+  constructor() {
+    this.collection = "users";
+  }
   async signUp(newUser) {
     try {
       // get the database
       const db = getDB();
 
       //get the collection
-      const collection = db.collection("users");
+      const collection = db.collection(this.collection);
 
       // Insert the document
       await collection.insertOne(newUser);
@@ -24,7 +27,7 @@ class UserRepository {
       const db = getDB();
 
       //get the collection
-      const collection = db.collection("users");
+      const collection = db.collection(this.collection);
 
       // Find the document
       return await collection.findOne({ email, password });
@@ -42,7 +45,7 @@ class UserRepository {
       const collection = db.collection("users");
 
       // Find the document
-      return await collection.findOne({ email});
+      return await collection.findOne({ email });
     } catch (err) {
       throw new ApplicationError("Something went wrong with database", 500);
     }
