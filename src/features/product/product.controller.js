@@ -16,14 +16,14 @@ export default class ProductController {
   }
   async addProduct(req, res) {
     try {
-      const { name, price, sizes } = req.body;
+      const { name, price, sizes, categories } = req.body;
 
       const newProduct = new ProductModel(
         name,
         null,
         parseFloat(price),
         req.file.filename,
-        null,
+        categories,
         sizes.split(",")
       );
 
@@ -67,14 +67,20 @@ export default class ProductController {
   async filterProducts(req, res) {
     try {
       const minPrice = req.query.minPrice;
-      const maxPrice = req.query.maxPrice;
+      // const maxPrice = req.query.maxPrice;
       const category = req.query.category;
 
-      const result = await this.productRepository.filter(
-        minPrice,
-        maxPrice,
-        category
-      );
+      const result = await this.productRepository.filter(minPrice, category);
+      res.status(200).send(result);
+    } catch (error) {
+      console.log(error);
+      return res.status(200).send("Something went wrong");
+    }
+  }
+
+  async averagePrice(req, res, next) {
+    try {
+      const result = await this.productRepository.averageProductPriceCategory();
       res.status(200).send(result);
     } catch (error) {
       console.log(error);

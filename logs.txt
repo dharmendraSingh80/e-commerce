@@ -71,3 +71,49 @@
 {"level":"info","message":"/- {\"productID\":\"656ef84a3bbb2f5c8bdb66df\",\"quantity\":3}","service":"request-logging"}
 {"level":"info","message":"/api/cartItems- {\"productID\":\"656ef84a3bbb2f5c8bdb66df\",\"quantity\":3}","service":"request-logging"}
 {"level":"info","message":"/- {\"productID\":\"656ef84a3bbb2f5c8bdb66df\",\"quantity\":3}","service":"request-logging"}
+{"level":"info","message":"/api/products- {}","service":"request-logging"}
+{"level":"info","message":"/api/products/filter?minPrice=7000- {}","service":"request-logging"}
+{"level":"info","message":"/api/products/averagePrice- {}","service":"request-logging"}
+{"level":"info","message":"/api/products/averagePrice- {}","service":"request-logging"}
+{"level":"info","message":"/api/products/averagePrice- {}","service":"request-logging"}
+{"level":"info","message":"/api/products/averagePrice- {}","service":"request-logging"}
+{"level":"info","message":"/api/products/averagePrice- {}","service":"request-logging"}
+{"level":"info","message":"/api/products/averagePrice- {}","service":"request-logging"}
+{"level":"info","message":"/api/orders- {}","service":"request-logging"}
+{"level":"info","message":"/api/orders- {}","service":"request-logging"}
+{"level":"info","message":"/api/orders- {}","service":"request-logging"}
+{"level":"info","message":"/api/orders- {}","service":"request-logging"}
+{"level":"info","message":"/api/cartItems?productID=656f1c74fab2c25139b3fa66&quantity=3- {}","service":"request-logging"}
+{"level":"info","message":"/?productID=656f1c74fab2c25139b3fa66&quantity=3- {}","service":"request-logging"}
+{"level":"info","message":"/api/cartItems?productID=656f1c74fab2c25139b3fa66&quantity=3- {}","service":"request-logging"}
+{"level":"info","message":"/?productID=656f1c74fab2c25139b3fa66&quantity=3- {}","service":"request-logging"}
+{"level":"info","message":"/api/cartItems- {\"productID\":\"656f1c74fab2c25139b3fa66\",\"quantity\":2}","service":"request-logging"}
+{"level":"info","message":"/- {\"productID\":\"656f1c74fab2c25139b3fa66\",\"quantity\":2}","service":"request-logging"}
+{"level":"info","message":"/api/orders- {}","service":"request-logging"}
+{"level":"info","message":"/api/orders- {}","service":"request-logging"}
+{"level":"info","message":"/api/orders- {}","service":"request-logging"}
+{"level":"info","message":"/api/orders- {}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup- {\"name\":\"john doe\",\"email\":\"john.doe@gmail.com\",\"password\":\"Password1\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/resetPassword- {}","service":"request-logging"}
+{"level":"info","message":"/api/users/resetPassword- {\"newPassword\":\"john@123\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/resetPassword- {\"newPassword\":\"john@123\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup- {\"name\":\"john doe\",\"email\":\"john.doe@gmail.com\",\"password\":\"john@123\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup- {\"name\":\"john doe\",\"email\":\"john.doe@gmail.com\",\"password\":\"john@123\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup- {\"name\":\"John doe\",\"email\":\"john.doe23@gmail.com\",\"password\":\"john@123456\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup- {\"name\":\"John doe\",\"email\":\"john.doe2@gmail.com\",\"password\":\"joh123456\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup- {\"name\":\"John doe\",\"email\":\"john.doe2@gmail.com\",\"password\":\"joh123456\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup- {\"name\":\"John doe\",\"email\":\"john.doe2@gmail.com\",\"password\":\"johdoe@123\"}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate- {\"productID\":\"656ef790196c168159e8c440\",\"rating\":5.5}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate- {\"productID\":\"656ef790196c168159e8c440\",\"rating\":5}","service":"request-logging"}
+{"level":"info","message":"/api/products/rate- {\"productID\":\"656ef896f7c7bee1da4a68d4\",\"rating\":5}","service":"request-logging"}
+{"level":"info","message":"/api/products- {}","service":"request-logging"}
+{"level":"info","message":"/api/products- {}","service":"request-logging"}
+{"level":"info","message":"/api/products- {}","service":"request-logging"}
+{"level":"info","message":"/api/likes- {\"id\":\"656ef790196c168159e8c440\",\"type\":\"Product\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes- {\"id\":\"657d87d2dd8d9d9994947c98\",\"type\":\"Category\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=657d87d2dd8d9d9994947c98&type=Category- {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=657d87d2dd8d9d9994947c98&type=Category- {}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=657d87d2dd8d9d9994947c98&type=Category- {}","service":"request-logging"}
+{"level":"info","message":"/api/likes- {\"id\":\"657d87d2dd8d9d9994947c99\",\"type\":\"Category\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes- {\"id\":\"657d87d2dd8d9d9994947c99\",\"type\":\"Category\"}","service":"request-logging"}
+{"level":"info","message":"/api/likes?id=657d87d2dd8d9d9994947c98&type=Category- {}","service":"request-logging"}
